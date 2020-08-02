@@ -16,7 +16,7 @@ minetest.register_tool("multitool:multitool_diamond",{
 	range = 8,
 	tool_capabilities = {
 		full_punch_interval = 0.7,
-		max_drop_level = 3,
+		max_drop_level = 1,
 		groupcaps = {
 			crumbly =       {maxlevel = 3, uses = 800, times = {[1]=0.1, [2]=0.3, [3]=0.5}},
 			cracky =        {maxlevel = 3, uses = 800, times = {[1]=0.1, [2]=0.3, [3]=0.5}},
@@ -44,13 +44,13 @@ minetest.register_tool("multitool:multitool_steel",{
 	inventory_image = "multitool_steel.png",
 	range = 6,
 	tool_capabilities = {
-		full_punch_interval = 0.9,
+		full_punch_interval = 1.4,
 		max_drop_level = 2,
 		groupcaps = {
-            		crumbly =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}},
+            crumbly =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}},
 			cracky  =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}},
 			choppy  =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}}, 
-            		snappy  =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}}, 
+            snappy  =       {maxlevel = 2, uses = 600, times = {[1]=0.4, [2]=0.6, [3]=0.8}}, 
 			damage_groups = {fleshy = 6},
 			groups  =       {axe = 1, sword = 1, shovel = 1, pickaxe = 1}
 		}
